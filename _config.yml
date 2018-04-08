@@ -6,10 +6,10 @@
 name: Eduard Moya
 
 # Short bio or description (displayed in the header)
-description: iOS Developer from Venezuela
+description: iOS Developer
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars3.githubusercontent.com/u/9448638
+avatar: images/site_avatar.png
 
 #
 # Flags below are optional
@@ -18,12 +18,12 @@ avatar: https://avatars3.githubusercontent.com/u/9448638
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: eduard.moya@gmail.com
   facebook:
   flickr:
-  github: edc0der/edc0der.github.io
+  github: edc0der
   instagram:
-  linkedin:
+  linkedin: eduard-moya-90138324
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: 
