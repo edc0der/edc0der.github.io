@@ -3,8 +3,6 @@ layout: post
 title: Generic array shuffling in Swift 4.1
 ---
 
-### The need
-
 I'm working with an open API which is quite straightforward, GET a list of dog breeds, GET a list of image URLs for a specific dog breed, but what I need is to make a UITableView filled with pictures of multiple breeds I select; so, I'm thinking, OK, I'll get the URLs for each breed, merge them in a single array and shuffle it.
 
 It doesn't happen every day that you need to shuffle an array. But when you do, you want to do it the most optimal way possible. So, googling ["array shuffle algorithms"](https://www.google.co.ve/search?q=array+shuffle+algorithms) the first result and the most talked about algorithm you get is the [Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle).
