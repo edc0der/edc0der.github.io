@@ -1,12 +1,7 @@
 ---
-published: false
----
----
 layout: post
 title: iOS Slide menu
 ---
-
-## Side menu on iOS?
 
 So, I've worked in a couple of projects which have had side menus, and even though they are falling out of use and being changed to TabBar (like Instagram, LinkedIn, Facebook, Twitter, etc.) many people are still designing apps with side menus, many times just to match it's Android counterparts to keep the same "experience".
 
