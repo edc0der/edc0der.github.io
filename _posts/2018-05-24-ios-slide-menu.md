@@ -7,7 +7,7 @@ So, I've worked in a couple of projects which have had side menus, and even thou
 
 ## Libraries
 
-There are libraries that already give you a side menu, but why overload your project with third party libraries when it's something really simple that you can do yourself? It will give you more control and understanding of what goes on in your app. And leave the 3rd party **[pods | carts | packages]** for the important stuff, like Alamofire, or SDKs from Google, Facebook, etc.
+There are libraries that already give you a side menu, but why overload your project with third party libraries when it's something really simple that you can do yourself? It will give you more control and understanding of what goes on in your app. And leave the 3rd party **(pods / carts / packages)** for the important stuff, like Alamofire, or SDKs from Google, Facebook, etc.
 
 ## Implementing
 
