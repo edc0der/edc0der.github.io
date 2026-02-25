@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for Word Counter — by Eduard Moya.">
+  <title>Privacy Policy — Word Counter — edc0der</title>
+  <link rel="icon" type="image/png" href="../../images/favicon.png">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <style>
+    /* Policy-specific styles — scoped to this page */
+    .policy { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+
+    .policy__header {
+      padding: 120px 0 48px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 48px;
+    }
+
+    .policy__app {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .policy__title {
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+
+    .policy__meta {
+      font-size: 14px;
+      color: var(--text-3);
+    }
+
+    .policy__highlight {
+      background: var(--accent-dim);
+      border: 1px solid rgba(124, 110, 246, 0.25);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 40px;
+      font-size: 15px;
+      color: var(--text-2);
+      line-height: 1.65;
+    }
+
+    .policy__highlight strong { color: var(--text); }
+
+    .policy h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 40px 0 12px;
+      padding-left: 14px;
+      border-left: 3px solid var(--accent);
+      letter-spacing: -0.01em;
+    }
+
+    .policy p {
+      font-size: 15px;
+      color: var(--text-2);
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    .policy ul {
+      list-style: none;
+      margin: 0 0 14px;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .policy ul li {
+      position: relative;
+      padding-left: 18px;
+      font-size: 15px;
+      color: var(--text-2);
+      line-height: 1.6;
+    }
+
+    .policy ul li::before {
+      content: "–";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    .policy a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .policy a:hover { text-decoration: underline; }
+
+    .policy__card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin: 12px 0 20px;
+    }
+
+    .policy__card p:last-child { margin-bottom: 0; }
+
+    .policy__footer {
+      margin-top: 64px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--text-3);
+    }
+
+    .policy__footer a { color: var(--text-3); }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main">
+    <div class="nav__inner">
+      <a href="../../" class="nav__logo" aria-label="edc0der — home">edc0der</a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">← Word Counter</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light / dark theme">
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+               viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+               viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1"  x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22"   x2="5.64"  y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1"  y1="12" x2="3"  y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22"  y1="19.78" x2="5.64"  y2="18.36"/>
+            <line x1="18.36" y1="5.64"  x2="19.78" y2="4.22"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="policy">
+
+      <header class="policy__header">
+        <p class="policy__app">Word Counter</p>
+        <h1 class="policy__title">Privacy Policy</h1>
+        <p class="policy__meta">Last updated: February 24, 2026</p>
+      </header>
+
+      <div class="policy__highlight">
+        <strong>The short version:</strong> Word Counter processes all text locally on your
+        device. We do not collect, store, or transmit anything you type. The only data that
+        leaves your device relates to crash diagnostics and advertising, both provided by
+        Google and described in full below.
+      </div>
+
+      <h2>1. Who We Are</h2>
+      <p>Word Counter is developed and maintained by <strong>Eduard Moya</strong>. If you
+        have any questions about this policy, you can reach us at
+        <a href="mailto:eduard.moya@gmail.com">eduard.moya@gmail.com</a>.</p>
+
+      <h2>2. Data We Do Not Collect</h2>
+      <p>Word Counter does not collect, store, or transmit:</p>
+      <ul>
+        <li>Any text you type or paste into the app</li>
+        <li>Your name, email address, or any account information</li>
+        <li>Your location</li>
+        <li>Photos, contacts, or any other personal files</li>
+        <li>Usage history, session recordings, or analytics events</li>
+      </ul>
+      <p>All text analysis (word count, character count, reading time, etc.) happens
+        entirely on your device and is never sent anywhere.</p>
+
+      <h2>3. Data Collected by Third-Party Services</h2>
+      <p>Word Counter uses two Google services that may collect certain technical
+        information. We have no direct access to this data — it is governed by Google's
+        own privacy policies.</p>
+
+      <h2>3a. Firebase Crashlytics (Crash Reporting)</h2>
+      <div class="policy__card">
+        <p><strong>Purpose:</strong> To detect and diagnose app crashes so we can fix
+          them in future updates.</p>
+        <p><strong>What it collects:</strong></p>
+        <ul>
+          <li>Crash stack traces and error logs</li>
+          <li>Device model, OS version, and app version</li>
+          <li>A randomly generated installation identifier (not linked to your identity)</li>
+          <li>The state of the app at the time of the crash (no text content is included)</li>
+        </ul>
+        <p><strong>When it runs:</strong> Only in production (release) builds. Debug builds
+          do not send crash data.</p>
+        <p><strong>Provider:</strong> Google LLC —
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Policy</a></p>
+      </div>
+
+      <h2>3b. Google AdMob (Advertising)</h2>
+      <div class="policy__card">
+        <p><strong>Purpose:</strong> To display banner advertisements within the app. Ads
+          help keep Word Counter free. You can remove all ads permanently with a one-time
+          in-app purchase.</p>
+        <p><strong>What it may collect:</strong></p>
+        <ul>
+          <li>Advertising identifier (IDFA on iOS, GAID on Android)</li>
+          <li>IP address (used to determine approximate region for ad relevance)</li>
+          <li>Device type, OS version, and app version</li>
+          <li>Ad interaction data (impressions, taps)</li>
+        </ul>
+        <p><strong>iOS — App Tracking Transparency:</strong> On iOS, AdMob will only access
+          your advertising identifier (IDFA) if you explicitly grant permission when prompted.
+          If you decline, you will still see ads, but they will not be personalized.</p>
+        <p><strong>Provider:</strong> Google LLC —
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> ·
+          <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob &amp; Privacy</a></p>
+      </div>
+
+      <h2>4. In-App Purchases</h2>
+      <p>Word Counter offers a one-time "Remove Ads" purchase. All payment processing is
+        handled entirely by Apple (App Store) or Google (Google Play). We do not receive
+        or store any payment information.</p>
+
+      <h2>5. Data Retention</h2>
+      <p>We do not maintain any user database. Crash reports collected by Firebase are
+        retained for 90 days per Google's default policy, after which they are automatically
+        deleted. Ad interaction data is managed by Google per their retention schedule.</p>
+
+      <h2>6. Your Rights (GDPR / CCPA)</h2>
+      <p>If you are located in the European Union, United Kingdom, California, or another
+        region with applicable privacy laws, you have rights regarding your personal data,
+        including the right to access, correct, or delete it.</p>
+      <p>Because Word Counter itself collects no personal data, most requests will need to
+        be directed to Google:</p>
+      <ul>
+        <li><a href="https://safety.google/privacy/privacy-controls/" target="_blank" rel="noopener">Google Privacy Controls</a> — manage your ad personalization and data</li>
+        <li><a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener">Google Account Data &amp; Privacy</a></li>
+      </ul>
+      <p>For any questions specific to this app, contact us at
+        <a href="mailto:eduard.moya@gmail.com">eduard.moya@gmail.com</a> and we will
+        respond within 30 days.</p>
+
+      <h2>7. Children's Privacy</h2>
+      <p>Word Counter is not directed at children under the age of 13 (or 16 in the EU).
+        We do not knowingly collect personal information from children. If you believe a
+        child has provided personal information through this app, please contact us and we
+        will take appropriate action.</p>
+
+      <h2>8. Changes to This Policy</h2>
+      <p>We may update this privacy policy from time to time. When we do, we will update
+        the "Last updated" date at the top of this page. We encourage you to review this
+        page periodically. Continued use of the app after changes constitutes acceptance
+        of the updated policy.</p>
+
+      <h2>9. Contact</h2>
+      <div class="policy__card">
+        <p><strong>Eduard Moya</strong><br>
+          <a href="mailto:eduard.moya@gmail.com">eduard.moya@gmail.com</a></p>
+      </div>
+
+      <footer class="policy__footer">
+        <p>Word Counter © 2026
+          <a href="../../">edc0der.github.io</a>
+          &nbsp;·&nbsp;
+          <a href="index.html">App page</a>
+        </p>
+      </footer>
+
+    </div>
+  </main>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

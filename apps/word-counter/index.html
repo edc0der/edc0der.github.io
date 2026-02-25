@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Word Counter — a focused, single-screen word counter for iOS and Android. Live stats island, rich text, no accounts.">
+  <meta property="og:title"       content="Word Counter — edc0der">
+  <meta property="og:description" content="A focused word counter for iOS and Android. Live stats, no accounts, always starts fresh.">
+  <meta property="og:type"        content="website">
+  <title>Word Counter — edc0der</title>
+  <link rel="icon" type="image/png" href="../../images/favicon.png">
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main">
+    <div class="nav__inner">
+      <a href="../../" class="nav__logo" aria-label="edc0der — home">edc0der</a>
+      <div class="nav__links">
+        <a href="../../#apps" class="nav__link">← Apps</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light / dark theme">
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+               viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+               viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1"  x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22"   x2="5.64"  y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1"  y1="12" x2="3"  y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22"  y1="19.78" x2="5.64"  y2="18.36"/>
+            <line x1="18.36" y1="5.64"  x2="19.78" y2="4.22"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ─── APP HERO ──────────────────────────── -->
+    <section class="app-page-hero">
+      <div class="app-page-hero__bg" aria-hidden="true"></div>
+      <div class="container">
+
+        <a href="../../#apps" class="breadcrumb">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M10 4L6 8l4 4" stroke="currentColor" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          All Apps
+        </a>
+
+        <div class="app-page-hero__inner">
+          <img src="../../images/apps/word-counter/icon.png"
+               alt="Word Counter app icon"
+               class="app-page-hero__icon"
+               width="100" height="100">
+
+          <div>
+            <p class="app-page-hero__eyebrow">iOS 17+ · Android 13+ · In Development</p>
+            <h1 class="app-page-hero__name">Word Counter</h1>
+            <p class="app-page-hero__desc">
+              A focused, single-screen word counter for iOS and Android.
+              Open the app, start typing. A live stats island shows your word
+              and character counts in real time. Tap the chart icon to expand
+              it into a full stats card — words, characters, sentences,
+              paragraphs, read time, and chars without spaces.
+              No accounts. No sync. Always starts fresh.
+            </p>
+            <div class="app-page-hero__tags">
+              <span class="tag">KMP</span>
+              <span class="tag">SwiftUI</span>
+              <span class="tag">Jetpack Compose</span>
+              <span class="tag">iOS 17+</span>
+              <span class="tag">Android 13+</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── FEATURES ─────────────────────────── -->
+    <section class="section section--alt" id="features">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Features</h2>
+          <p class="section__sub">Everything you need, nothing you don't.</p>
+        </header>
+
+        <div class="features-grid">
+
+          <div class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                   stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 5h14M3 10h10M3 15h7"/>
+              </svg>
+            </div>
+            <p class="feature-card__title">Live Stats</p>
+            <p class="feature-card__desc">Word count, character count, sentences, paragraphs, and read time — all calculated instantly as you type.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                   stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="12" width="16" height="6" rx="3"/>
+                <path d="M6 12V8a4 4 0 0 1 8 0v4"/>
+              </svg>
+            </div>
+            <p class="feature-card__title">Animated Stats Island</p>
+            <p class="feature-card__desc">A floating pill at the bottom of the screen expands with a spring animation into a detailed stats card — and collapses back just as smoothly.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                   stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 7h12M4 11h8M8 15h8"/>
+                <path d="M7 3.5 5 7h2" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <p class="feature-card__title">Rich Text</p>
+            <p class="feature-card__desc">Apply bold, italic, and header formatting via a clean toolbar. The stats always reflect the underlying plain text.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                   stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 6H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-3"/>
+                <path d="M10 2v9M7 8l3-3 3 3"/>
+              </svg>
+            </div>
+            <p class="feature-card__title">Share Stats</p>
+            <p class="feature-card__desc">Send your stats snapshot to any app with the native share sheet — copy to clipboard, send a message, or save to Notes.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                   stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="10" cy="10" r="7"/>
+                <path d="M10 7v3l2 2"/>
+              </svg>
+            </div>
+            <p class="feature-card__title">Stateless</p>
+            <p class="feature-card__desc">No persistence, no history, no account. Kill the app and reopen: blank slate. Focused on the task at hand.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                   stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="7" height="14" rx="2"/>
+                <rect x="11" y="3" width="7" height="14" rx="2"/>
+              </svg>
+            </div>
+            <p class="feature-card__title">Truly Cross-Platform</p>
+            <p class="feature-card__desc">SwiftUI on iOS. Jetpack Compose on Android. Shared business logic via Kotlin Multiplatform — native UI on each platform, no compromises.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SCREENSHOTS ───────────────────────── -->
+    <section class="section" id="screenshots">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Screenshots</h2>
+          <p class="section__sub">iOS — dark and light mode.</p>
+        </header>
+
+        <div class="gallery">
+          <img src="../../images/apps/word-counter/screen-1.png"
+               alt="Word Counter — empty editor, dark mode"
+               class="gallery__img" loading="lazy">
+          <img src="../../images/apps/word-counter/screen-4.png"
+               alt="Word Counter — text entered with stats pill, dark mode"
+               class="gallery__img" loading="lazy">
+          <img src="../../images/apps/word-counter/screen-2.png"
+               alt="Word Counter — stats sheet expanded, dark mode"
+               class="gallery__img" loading="lazy">
+          <img src="../../images/apps/word-counter/screen-5.png"
+               alt="Word Counter — text entered with stats pill, light mode"
+               class="gallery__img" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── LEGAL ─────────────────────────────── -->
+    <section class="section section--alt" id="legal">
+      <div class="container container--narrow">
+        <header class="section__header">
+          <h2 class="section__title">Legal</h2>
+          <p class="section__sub">Transparency about how the app handles data.</p>
+        </header>
+
+        <nav class="contact-list" aria-label="Legal links">
+          <a href="privacy.html" class="contact-row">
+            <span class="contact-row__kind">Privacy</span>
+            <span class="contact-row__value">Privacy Policy</span>
+            <svg class="contact-row__arrow" width="16" height="16" viewBox="0 0 16 16"
+                 fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </nav>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy">© 2026 Eduard Moya · <a href="../../" style="color:inherit;">edc0der.github.io</a></p>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
