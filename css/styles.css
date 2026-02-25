@@ -409,10 +409,11 @@ h1, h2, h3 {
   flex-shrink: 0;
 }
 
-.app-icon--1 { background: linear-gradient(140deg, #7c6ef6 0%, #e8547a 100%); }
-.app-icon--2 { background: linear-gradient(140deg, #4facfe 0%, #00f2fe 100%); }
-.app-icon--3 { background: linear-gradient(140deg, #43e97b 0%, #38f9d7 100%); }
-.app-icon--4 { background: linear-gradient(140deg, #fa709a 0%, #fee140 100%); }
+.app-icon--1      { background: linear-gradient(140deg, #7c6ef6 0%, #e8547a 100%); }
+.app-icon--2      { background: linear-gradient(140deg, #4facfe 0%, #00f2fe 100%); }
+.app-icon--3      { background: linear-gradient(140deg, #43e97b 0%, #38f9d7 100%); }
+.app-icon--4      { background: linear-gradient(140deg, #fa709a 0%, #fee140 100%); }
+.app-icon--indigo { background: linear-gradient(140deg, #2d2a7a 0%, #6d5afe 100%); }
 
 /* Card body */
 .app-card__content {
@@ -500,6 +501,28 @@ h1, h2, h3 {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
   border-radius: 4px;
+}
+
+/* Screenshot strip */
+.app-card__screenshots {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  margin: 6px -28px 0;
+  padding: 0 28px 2px;
+}
+
+.app-card__screenshots::-webkit-scrollbar { display: none; }
+
+.app-card__screenshots img {
+  height: 150px;
+  width: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  display: block;
 }
 
 /* =============================================
