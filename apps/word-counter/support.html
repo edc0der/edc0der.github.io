@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Support for Word Counter — by Eduard Moya.">
+  <meta property="og:title"       content="Support — Word Counter — edc0der">
+  <meta property="og:description" content="Support for Word Counter — by Eduard Moya.">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://edc0der.github.io/apps/word-counter/support.html">
+  <meta property="og:image"       content="https://edc0der.github.io/images/og-image.png">
+  <title>Support — Word Counter — edc0der</title>
+  <link rel="icon" type="image/svg+xml" href="../../images/favicon.svg">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <style>
+    /* Policy-specific styles — scoped to this page */
+    .policy { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+
+    .policy__header {
+      padding: 120px 0 48px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 48px;
+    }
+
+    .policy__app {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .policy__title {
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+
+    .policy__meta {
+      font-size: 14px;
+      color: var(--text-3);
+    }
+
+    .policy__highlight {
+      background: var(--accent-dim);
+      border: 1px solid rgba(124, 110, 246, 0.25);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 40px;
+      font-size: 15px;
+      color: var(--text-2);
+      line-height: 1.65;
+    }
+
+    .policy__highlight strong { color: var(--text); }
+
+    .policy h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 40px 0 12px;
+      padding-left: 14px;
+      border-left: 3px solid var(--accent);
+      letter-spacing: -0.01em;
+    }
+
+    .policy p {
+      font-size: 15px;
+      color: var(--text-2);
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    .policy a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .policy a:hover { text-decoration: underline; }
+
+    .policy__card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin: 12px 0 20px;
+    }
+
+    .policy__card p:last-child { margin-bottom: 0; }
+
+    .policy__footer {
+      margin-top: 64px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--text-3);
+    }
+
+    .policy__footer a { color: var(--text-3); }
+
+    /* FAQ items */
+    .faq { display: flex; flex-direction: column; gap: 2px; margin-bottom: 8px; }
+
+    .faq__item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .faq__question {
+      width: 100%;
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 20px;
+      text-align: left;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.4;
+    }
+
+    .faq__question:hover { color: var(--accent); }
+
+    .faq__chevron {
+      flex-shrink: 0;
+      width: 16px;
+      height: 16px;
+      color: var(--text-3);
+      transition: transform 0.2s ease;
+    }
+
+    .faq__item[open] .faq__chevron { transform: rotate(180deg); }
+
+    .faq__item[open] .faq__question { color: var(--accent); }
+
+    .faq__answer {
+      padding: 0 20px 18px;
+      font-size: 15px;
+      color: var(--text-2);
+      line-height: 1.7;
+    }
+
+    .faq__answer p { margin: 0; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main">
+    <div class="nav__inner">
+      <a href="../../" class="nav__logo" aria-label="edc0der — home">edc0der</a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">← Word Counter</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light / dark theme">
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+               viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+               viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1"  x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22"   x2="5.64"  y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1"  y1="12" x2="3"  y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22"  y1="19.78" x2="5.64"  y2="18.36"/>
+            <line x1="18.36" y1="5.64"  x2="19.78" y2="4.22"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="policy">
+
+      <header class="policy__header">
+        <p class="policy__app">Word Counter Support</p>
+        <h1 class="policy__title">How can we help?</h1>
+        <p class="policy__meta">Support for Word Counter — Text Stats for iOS &amp; Android</p>
+      </header>
+
+      <div class="policy__highlight">
+        <strong>Need help with Word Counter?</strong><br>
+        Word Counter is a simple text statistics app for checking words, characters, sentences,
+        paragraphs, and estimated reading time. This page covers common questions, purchase help,
+        privacy, and how to contact support.
+      </div>
+
+      <h2>Contact Support</h2>
+      <p>
+        For bugs, purchase issues, feedback, or feature requests, email us directly. Please include
+        the device model, operating system version, app version, and a short description of the issue.
+      </p>
+      <div class="policy__card">
+        <p><strong>Email</strong><br>
+          <a href="mailto:edc0der.apps@gmail.com?subject=Word%20Counter%20Support">edc0der.apps@gmail.com</a></p>
+      </div>
+
+      <h2>Before You Contact Us</h2>
+      <div class="policy__card">
+        <p><strong>For counting issues:</strong> copy the text somewhere safe, clear the app, paste it again, and check whether the result changes.</p>
+        <p><strong>For ads or purchase issues:</strong> open Settings in the app and use <em>Restore Purchases</em>.</p>
+        <p><strong>For app issues:</strong> close and reopen the app, then check whether an update is available in the App Store or Google Play.</p>
+      </div>
+
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq" role="list">
+
+        <details class="faq__item" role="listitem" open>
+          <summary class="faq__question">
+            What can I use Word Counter for?
+            <svg class="faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </summary>
+          <div class="faq__answer">
+            <p>Use Word Counter to quickly check text length for essays, posts, notes, messages,
+              articles, product descriptions, and other writing. The app shows instant statistics
+              without requiring an account.</p>
+          </div>
+        </details>
+
+        <details class="faq__item" role="listitem">
+          <summary class="faq__question">
+            Which statistics does the app show?
+            <svg class="faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </summary>
+          <div class="faq__answer">
+            <p>Word Counter can show words, characters, sentences, paragraphs, and estimated reading
+              time. The exact statistics available may vary by app version and platform.</p>
+          </div>
+        </details>
+
+        <details class="faq__item" role="listitem">
+          <summary class="faq__question">
+            Does the app save, upload, or share my text?
+            <svg class="faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </summary>
+          <div class="faq__answer">
+            <p>No. Word Counter is designed to process your text on your device. Your text is not
+              uploaded to our servers. For more detail, read the <a href="privacy.html">Privacy Policy</a>.</p>
+          </div>
+        </details>
+
+        <details class="faq__item" role="listitem">
+          <summary class="faq__question">
+            How do I remove ads?
+            <svg class="faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </summary>
+          <div class="faq__answer">
+            <p>Open Settings in Word Counter and choose the ad removal option. If available in your
+              version, this is a one-time purchase that removes ads permanently for the account used
+              to make the purchase.</p>
+          </div>
+        </details>
+
+        <details class="faq__item" role="listitem">
+          <summary class="faq__question">
+            I paid to remove ads but still see them. What should I do?
+            <svg class="faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </summary>
+          <div class="faq__answer">
+            <p>Open Settings and tap <em>Restore Purchases</em>. Make sure you are signed in with the
+              same Apple ID or Google account used for the original purchase. If the issue continues,
+              email support and include the platform, device model, and app version.</p>
+          </div>
+        </details>
+
+        <details class="faq__item" role="listitem">
+          <summary class="faq__question">
+            Why does the count differ from another app or website?
+            <svg class="faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </summary>
+          <div class="faq__answer">
+            <p>Different tools may handle punctuation, emojis, symbols, line breaks, contractions,
+              URLs, or non-Latin scripts differently. If you find a case that looks wrong, send us a
+              short sample text so we can review it.</p>
+          </div>
+        </details>
+
+        <details class="faq__item" role="listitem">
+          <summary class="faq__question">
+            Can I request a feature?
+            <svg class="faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </summary>
+          <div class="faq__answer">
+            <p>Yes. Send feedback by email and describe what you are trying to accomplish. We review
+              suggestions for future updates.</p>
+          </div>
+        </details>
+
+      </div>
+
+      <h2>Useful Links</h2>
+      <div class="policy__card">
+        <p><a href="index.html">Word Counter app page</a></p>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+      </div>
+
+      <footer class="policy__footer">
+        <p>Word Counter © 2026
+          <a href="../../">edc0der.github.io</a>
+          &nbsp;·&nbsp;
+          <a href="index.html">App page</a>
+          &nbsp;·&nbsp;
+          <a href="privacy.html">Privacy Policy</a>
+        </p>
+      </footer>
+
+    </div>
+  </main>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
